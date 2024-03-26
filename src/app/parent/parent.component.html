@@ -1,0 +1,6 @@
+parent component: {{prop}}
+<button (click)="decrement()">--</button>
+<input type="number" [(ngModel)]="prop">
+<hr>
+<!-- <app-child [childProp]="this.parentProp" (childPropChange)="childChangeEvent($event)"></app-child> -->
+<app-child [(ngModel)]="prop"></app-child>
